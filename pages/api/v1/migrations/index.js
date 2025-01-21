@@ -24,8 +24,6 @@ export default async function migrations(request, response) {
       const pendingMigrations = await migrationRunner({
         ...defaultMigrationOptions,
       });
-
-      console.log(process.env.DATABASE_URL);
       response.status(200).json(pendingMigrations);
     } else if (request.method === "POST") {
       const migratedMigrations = await migrationRunner({
