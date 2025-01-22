@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function Home() {
   return (
     <div>
@@ -12,10 +14,12 @@ function Home() {
       <p>Tudo muda o tempo todo e precisamo continuar aprendendo, evoluindo.</p>
 
       <a href="https://discord.com/invite/GqBqrjMN99?fbclid=PAZXh0bgNhZW0CMTEAAaa32ott8kDXieM3IdFa8I8zqCuOw4ukcmh4dv3nSxZNPMwIckOZ5DWOGqk_aem_qlZY04ejHBX80ct-Ng37Mg">
-        <img
-          width="50px"
+        <Image
+          alt="Logo do discord"
+          width={50}
+          height={50}
           src="https://uploads-ssl.webflow.com/6257adef93867e50d84d30e2/66b6ab21929f5be3edc1a08d_jobs_clyde.svg"
-        ></img>
+        />
       </a>
 
       <p> &copy; Evolvio LTDA </p>
